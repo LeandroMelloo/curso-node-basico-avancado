@@ -10,14 +10,6 @@ async function obterPessoas(nome) {
     return response.data
 }
 
-obterPessoas('r2')
-.then(function (resultado) {
-    console.log('resultado', resultado);
-})
-.catch(function (erro){
-    console.erro('Não foi possível efetuar a busca', erro);
-})
-
 module.exports = {
     obterPessoas
 }
