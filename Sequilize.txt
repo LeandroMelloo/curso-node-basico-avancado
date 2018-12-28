@@ -1,0 +1,1 @@
+Sequelize é basicamente um ORM, ou seja, é um objeto pra pegar seu objeto e converter para tabela de banco de dados.
