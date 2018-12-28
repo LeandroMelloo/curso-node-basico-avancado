@@ -23,6 +23,9 @@ class ContextStrategy extends Icrud {
     isConnected() {
         return this._database.isConnected()
     }
+    connect() {
+        return this._database.connect()
+    }
 }
 
 // tornar a classe publica
