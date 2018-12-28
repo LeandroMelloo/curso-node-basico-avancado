@@ -1,0 +1,6 @@
+Banco Relacionais
+
+- Estruturas Fixas
+- Chaves estrangeiras e constraints
+- Consistente
+
