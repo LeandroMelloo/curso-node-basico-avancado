@@ -1,0 +1,11 @@
+docker images: mostra todas as imagens localmente do computador
+docker container run --publish 8080:80 nginx: roda o container docker na porta 8080
+docker container run --publish 8080:80 -d nginx: roda o container docker na porta 8080 em background
+docker container ls: lista os containers que estão funcionando
+docker container ls -a: lista os containers que estão funcionando e os que não estão funcionando
+docker version: lista detalhadamente todas as informações
+docker info: mostra todas informações relacionadas aos containers docker
+docker container run --publish 8080:80 -d --name webserver nginx: nomeando o container com o comando --name
+docker stop 89ad287e8322: parar o container docker
+docker start ddbbb97cf2af: iniciando um container docker
+docker container inspect webserver: retorna um json com todas as informções do container

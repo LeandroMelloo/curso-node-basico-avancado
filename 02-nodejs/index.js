@@ -13,7 +13,7 @@ function obterUsuario(callback) {
   setTimeout(function() {
     return callback(null, {
       id: 1,
-      nome: "Leandro",
+      nome: "Leandro Moreira Pulino de Mello",
       dataNascimento: new Date()
     });
   }, 1000);
@@ -31,8 +31,8 @@ function obterTelefone(idUsuario, callback) {
 function obterEndereco(idUsuario, callback) {
   setTimeout(function() {
     return callback(null, {
-      rua: "Rua: Saguairu",
-      numero: 415
+      rua: "Rua: Reims",
+      numero: 120
     });
   }, 2000);
 }
