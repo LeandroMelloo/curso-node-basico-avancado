@@ -2,20 +2,20 @@ const service = require("./service");
 
 async function main() {
   try {
-    const result = await service.obterPessoas("a");
+    const result = await service.obterPessoas();
 
-    const names = [];
+    const nomes = [];
 
-    /*console.time("for");
+    console.time("for");
 
     //--------------------------------> FOR <-------------------------------------
-    for (let i = 0; i <= result.results.length - 1; i++) {
-      const pessoa = result.results[i];
+    for (let i = 0; i < result.length; i++) {
+      const pessoa = result[i];
 
-      names.push(pessoa.name);
+      nomes.push(pessoa.nome);
     }
 
-    console.timeEnd("for");*/
+    console.timeEnd("for");
 
     //-------------------------------> FOR IN <-----------------------------------
 
@@ -31,7 +31,7 @@ async function main() {
 
     //-------------------------------> FOR OF <------------------------------------
 
-    console.time("forOf");
+    /*console.time("forOf");
 
     for (pessoa of result.results) {
         names.push(pessoa.name)
@@ -39,7 +39,7 @@ async function main() {
 
     console.timeEnd("forOf")
 
-    console.log(`Nomes:`, names);
+    console.log(`Nomes:`, names);*/
   } catch (error) {
     console.error(`Erro interno:`, error);
   }

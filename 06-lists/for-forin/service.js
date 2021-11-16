@@ -1,11 +1,11 @@
 const axios = require('axios');
 
 // URL do SWAPI.
-const URL = `https://swapi.co/api/people`
+const URL = `https://tempapi.proj.me/api/p0JeIOtuD`
 
 // async => manipular promisses internamente dessa função.
-async function obterPessoas(nome) {
-    const url = `${URL}/?search=${nome}&format=json`
+async function obterPessoas(nomes) {
+    const url = `${URL}`
     const response = await axios.get(url)
     return response.data
 }
